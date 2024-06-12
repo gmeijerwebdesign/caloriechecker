@@ -1,0 +1,115 @@
+.notes-container {
+  position: relative;
+  top: 120px;
+}
+
+.notes-header {
+  position: relative;
+  left: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  color: #2e3031;
+}
+
+.notes-box {
+  flex-wrap: wrap;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  padding-left: 25px;
+}
+
+.add-note {
+  background: linear-gradient(90deg, #ff4c4c, #ff8c4c);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: black;
+  font-size: 70px;
+}
+
+.make-note-container {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  transition: top 0.5s ease;
+}
+.make-note-container.active {
+  top: 0;
+}
+
+.make-note-box {
+  background: rgb(63, 63, 63);
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  gap: 20px;
+  flex-direction: column;
+  height: 230px;
+  border-radius: 50px;
+}
+
+.make-note-header {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+textarea {
+  width: 250px;
+  background: #ffffff;
+  border: none;
+  outline: 1px solid rgb(139, 139, 139);
+}
+.add-note p {
+  color: white;
+}
+
+.made-note {
+  background: #e1e1e1;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: black;
+  font-size: 15px;
+}
+
+.made-note-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: initial;
+  max-width: 45px;
+}
+
+.view-note-container {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  transition: top 0.5s ease;
+}
+.view-note-container.active {
+  top: 0;
+}

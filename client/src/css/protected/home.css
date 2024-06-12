@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Julius+Sans+One&family=Poetsen+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.samenvatting-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  top: 50px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.samenvatting-header {
+  position: relative;
+  left: -110px;
+  padding: 5px;
+}
+
+.voedingswaardes-header {
+  position: relative;
+  left: -125px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  color: #2e3031;
+}
+
+.samenvatting-container {
+  background: white;
+  width: 90vw;
+  border-radius: 20px;
+  height: 150px;
+  -webkit-box-shadow: 1px 10px 41px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 10px 41px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 10px 41px -19px rgba(0, 0, 0, 0.75);
+}
+
+.home-box {
+  width: 100vw;
+  height: 140vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-blob {
+  position: absolute;
+  top: -40%;
+  left: 100%;
+  width: 240%;
+  height: 800px;
+  transform: translate(-50%);
+  z-index: -1;
+}
+.home-blob1 {
+  position: fixed;
+  top: -50%;
+  left: 100%;
+  width: 240%;
+  height: 700px;
+  transform: translate(-50%);
+  z-index: -1;
+}
+.home-blob2 {
+  position: fixed;
+  bottom: -30%;
+  left: 10%;
+  width: 240%;
+  height: 70%;
+  transform: translate(-50%);
+  z-index: -1;
+}
+
+.samenvatting-content {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.samenvatting-holder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.progressbar-box {
+  width: 100px;
+  height: 100px;
+  top: -15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+}
+
+.progress-text {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+.progress-bar-holder {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 30px;
+  width: 70px;
+  height: 10px;
+  direction: rtl; /* Ensure left to right direction */
+  -webkit-appearance: none; /* Remove default styling for progress bar */
+  appearance: none;
+}
+
+.progress-bar-holder::-webkit-progress-bar {
+  background: linear-gradient(to right, #ff4c4c, #ff8c4c);
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+}
+
+.progress-bar-holder::-webkit-progress-value {
+  background-color: #e0e0e0;
+}
+
+.food-values-container {
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.food-values-box {
+  background: white;
+  width: 90vw;
+  border-radius: 20px;
+  height: 240px;
+  -webkit-box-shadow: 1px 10px 41px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 10px 41px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 10px 41px -19px rgba(0, 0, 0, 0.75);
+}
+.breakfast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #6565654d;
+}
+.breakfast-last {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.food-values-title {
+  font-weight: 600;
+  color: #2e3031;
+}
+.food-values-kcal {
+  color: rgba(0, 0, 0, 0.258);
+  font-weight: 500;
+}
+.food-values-image {
+  font-size: 25px;
+}
+.food-values-row1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.food-values-row2 {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+.food-values-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #666666;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.home-add-button {
+  position: fixed;
+  bottom: 80px;
+  left: 80%;
+}
+.add-button {
+  text-decoration: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background: #ff4c4c;
+  border: 1px solid #e04c4c;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 50px;
+}
+.add-button p {
+  position: relative;
+}
+
+.footer-container {
+  position: fixed;
+  background: rgb(220, 220, 220);
+  width: 100vw;
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+}
+.footer-col {
+  text-align: center;
+}
+.footer-note {
+  background: #000;
+  height: 15px;
+  width: 15px;
+}
+
+.addfood-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  gap: 10px;
+  max-width: 400px;
+  padding: 25px;
+  background: white;
+  border-radius: 40px;
+  box-shadow: 3px 16px 27px 0px rgba(0, 0, 0, 0.07);
+}
+.addfood-container h1 {
+  font-size: 20px;
+}
+.addfood-text {
+  width: 250px;
+}
+.addfood-container input {
+  background: #e9e9e9;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.small-input-col {
+  text-align: center;
+}
+.small-inputs {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 10px;
+}
+.measurement-box {
+  padding: 10px;
+}
+
+.measurement-input {
+  width: 50px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.radios {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-option label {
+  font-size: 14px;
+}
+
+.small-inputs input {
+  height: 50px;
+  width: 50px;
+}
+.measurement-box {
+  padding: 10px;
+}
+.mes {
+  padding-top: 10px;
+  padding-bottom: -10px;
+}
+
+.add-food-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}

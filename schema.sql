@@ -1,0 +1,7 @@
+CREATE TABLE notes (
+    noteID INT PRIMARY KEY AUTO_INCREMENT,
+    date VARCHAR(255) NOT NULL,
+    txt VARCHAR(1000) NOT NULL,
+    userID INT,
+    FOREIGN KEY (userID) REFERENCES users(userID)
+)

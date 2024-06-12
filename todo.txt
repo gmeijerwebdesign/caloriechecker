@@ -1,0 +1,12 @@
+--update displayer--
+
+1. UI maken voor update displayer
+
+2. Zorgen dat je die tezien krijgt waarneer je voor het eerst inlogd
+
+3. header knop ervoor maken
+
+--production--
+
+
+
